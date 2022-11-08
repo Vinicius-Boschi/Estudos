@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<h1>Uber vs Carro</h1>
+<script	src="https://rawgit.com/caelum/projeto01/formataTempoUberComLibInstrutor/apostilaIgno
+re/libRelogio.js"></script>
+
+<h2>Uber</h2>
+<script>
+
+var mensagem
+function pegaNumero() {
+	return parseFloat(prompt(mensagem).replace(",", "."))
+}
+
+function	formataMoeda(valor){
+return "R$	"	+	valor.toFixed(2).replace(".",	",")
+}
+
+var distancia = parseFloat(prompt("Qual a distância que sera percorrida?"))
+mensagem = "Qual a velocidade média do carro?"
+var velocidadeMedia = pegaNumero()
+
+var tempoEmHoras = distancia / velocidadeMedia
+var tempoEmMinutos = tempoEmHoras * 60
+var totalUber = 2 + distancia * 1.4 + tempoEmMinutos * 0.26
+
+tempo = tempoEmMinutos	
+var tempoFormatado = formataRelogio()
+document.write(`
+	Tempo: ${tempoFormatado}
+	<br>
+	Total: R$ ${totalUber.toFixed(2).replace(".", ",")}
+	`)
+</script>
+
+<h2>Carro</h2>
+<script>
+
+mensagem = "Quantos km seu carro faz por litro?"
+var autonomia = pegaNumero()
+
+mensagem = "Qual o preço do	litro da gasolina?"
+var precoLitroGasolina = pegaNumero()
+
+mensagem = "Digite o quanto gastará com estacionamento"
+var totalEstacionamento = pegaNumero()
+
+var	totalGasolina = (distancia / autonomia)	* precoLitroGasolina
+var	totalCarro = totalGasolina + totalEstacionamento
+
+document.write(`
+	Gasolina: ${formataMoeda(totalGasolina)}
+	<br>
+	Estacionamento: ${formataMoeda(totalEstacionamento)}
+	<br>
+	Total: R$ ${formataMoeda(totalCarro)}
+`)
+
+</script>

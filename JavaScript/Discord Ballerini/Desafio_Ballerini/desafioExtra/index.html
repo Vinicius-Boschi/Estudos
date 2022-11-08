@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Ballerini</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="name">Digite os dados do usuário</h1>
+        
+        <p class="nameInput">Nome
+            <input type="text" class="nameUser">
+        </p>
+
+        <p class="nameInput">Idade
+            <input type="number" class="ageUser">
+        </p>
+
+        <p class="nameInput">Skills
+            <input type="text" class="skills">
+        </p>
+
+        <input type="submit" class="register" value="Cadastrar usuário" onclick="user()">
+        
+        <div class="vertical-line"></div>   
+        
+        <div class="res">
+            <h1 class="result">Resultado: </h1>
+
+            <div class="text">
+                <p class="nameText">Nome: </>
+                <p class="resultName"></p> 
+            </div>
+            
+            <div class="text">
+                <p class="ageText">Idade: </p>
+                <p class="resultAge"></p>
+            </div>
+
+            <div class="text">
+                <p class="skillsText">Skills: </p>
+                <p class="resultSkills"></p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

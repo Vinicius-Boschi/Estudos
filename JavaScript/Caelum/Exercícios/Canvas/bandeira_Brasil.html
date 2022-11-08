@@ -1,0 +1,41 @@
+<canvas id="myCanvas5" width="250" height="150" style="border:1px solid #d3d3d3;">
+
+<script>
+var c = document.getElementById("myCanvas5");
+var ctx = c.getContext("2d");
+
+//Desenha o retângulo verde
+ctx.fillStyle="green";
+ctx.fillRect(0,0,250,150);
+
+//Desenha o losango amarelo
+ctx.fillStyle = "#FCFF00";
+ctx.beginPath();
+ctx.moveTo(125,0);
+ctx.lineTo(250,75);
+ctx.lineTo(125,150);
+ctx.lineTo(0, 75);
+ctx.lineTo(125,0);
+ctx.fill();
+ctx.closePath(); 
+
+//Desenha o círculo azul
+ctx.beginPath();
+ctx.fillStyle="#00027F";
+ctx.arc(125,75,50,0,2*Math.PI);
+ctx.fill();
+ctx.closePath();
+
+//Desenha a faixa branca
+ctx.fillStyle="#FFFFFF";
+ctx.fillRect(75,65,100,15);
+
+//Desenha o texto
+ctx.beginPath();
+ctx.fillStyle="#000000";
+ctx.font="10px Arial";
+ctx.fillText("Ordem e Progresso",80,75);
+ctx.fill();
+ctx.closePath();
+
+</script>

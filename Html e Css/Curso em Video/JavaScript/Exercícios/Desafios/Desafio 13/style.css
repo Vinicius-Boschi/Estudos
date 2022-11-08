@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+h1 {
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.botao {
+    font: normal 14pt Arial,serif;
+    margin: 10px 1px;
+}
+
+#resultado{
+    font-size: 16pt;
+}
+
+#texto {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+p {
+    line-height: 2;
+}
+
+.aprovado {
+    background-color: rgba(0, 128, 0, 0.603);
+    width: 120px;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 4px;
+}
+
+.reprovado {
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.595);
+    padding: 4px;
+}
+
+.recuperação {
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: rgba(255, 145, 0, 0.595);
+    padding: 4px;
+}
+
+.container {
+    background-color: rgba(34, 78, 143, 0.548);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    line-height: 2em;
+    width: 50rem;
+    height: 42rem;
+}
+
+input {
+    font: normal 18pt Arial,serif;
+    width: 252px;
+    height: 40px;
+    margin: 6px;
+}
+
+.botao {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(170, 169, 169, 0.377);
+    cursor: pointer;
+}

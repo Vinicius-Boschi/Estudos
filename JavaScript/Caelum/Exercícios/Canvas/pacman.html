@@ -1,0 +1,38 @@
+<canvas width="100" height="100" id="tela"></canvas>
+
+<script>
+var tela = document.getElementById("tela")
+var caneta = tela.getContext("2d");
+
+caneta.fillStyle="yellow";
+//parte de cima
+caneta.beginPath();
+caneta.arc(50,50,20,3.14-0.5,2*3.14-0.5);
+caneta.fill();
+//parte de baixo
+caneta.beginPath();
+caneta.arc(50,50,20,0.5,3.14+0.5);
+caneta.fill();
+//olho
+caneta.fillStyle="black";
+caneta.beginPath();
+caneta.arc(52,40,2,0,2*3.14);
+caneta.fill();var tela = document.getElementById("tela")
+var caneta = tela.getContext("2d");
+
+caneta.fillStyle="yellow";
+//parte de cima
+caneta.beginPath();
+caneta.arc(50,50,20,3.14-0.5,2*3.14-0.5);
+caneta.fill();
+//parte de baixo
+caneta.beginPath();
+caneta.arc(50,50,20,0.5,3.14+0.5);
+caneta.fill();
+//olho
+caneta.fillStyle="black";
+caneta.beginPath();
+caneta.arc(52,40,2,0,2*3.14);
+caneta.fill();
+
+</script>

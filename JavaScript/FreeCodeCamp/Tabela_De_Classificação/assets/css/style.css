@@ -1,0 +1,59 @@
+* {
+    text-align: center;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url("https://s2.glbimg.com/aE2JGgxXTKPUhy_BWwGfittWgkY=/0x0:620x390/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2016/04/28/brasilmegaarenario1.jpg");
+    background-color: #111;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#nome, #linkFoto {
+    height: 2rem;
+    border-radius: .4rem;
+}
+
+.table {
+    border: 2px solid white;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+th,tr,td {
+    border: 1px solid white;
+} 
+
+.fotoJogadores {
+    width: 100px;
+}
+
+.buttons, #adicionar {
+   background: none;
+   color: white;
+   border: 1px solid white;
+   font-size: 12pt;
+   padding: .5rem;
+   border-radius: .3rem;
+   cursor: pointer;
+}
+
+.buttons:hover, #adicionar:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        background-size: auto;
+    }
+
+    #adicionar {
+        margin-top: 1rem;
+    }
+}

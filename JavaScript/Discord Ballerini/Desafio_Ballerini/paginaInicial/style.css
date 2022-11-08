@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #466362;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8896AB;
+    border: 3px solid #938581;
+    box-shadow: 1px 2px 2px 2px #000;
+    color: #d8e1eb;
+    border-radius: .5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+a > img {
+    width: 20%;
+}
+
+.res {  
+    display: grid;
+    align-items: center;    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 3rem; 
+    align-items: center;
+    transition: all 1.5s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+.image {
+    width: 15rem;
+    height: 8rem;
+    border-radius: .5rem;
+    border: 3px solid #938581;
+    box-shadow: 1px 2px #000;
+}
+
+.image:hover {
+    transition: all 1s linear;
+    transform: translateY(-10px) scale(1);
+    box-shadow: 5px 5px #0000008c;
+}
+  
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d8e1eb;
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 999px) { 
+    .container {
+        width: auto;
+    }
+    
+    .res {
+        display: initial;
+        padding: 0;
+    }
+
+    .projects {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,89 @@
+<meta charset="UTF-8">
+<script>
+      function pulaLinha(){
+       document.write("<br>");
+   }
+   
+   function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+   }
+
+   function calculaIMC(altura, peso){
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+	
+    var nome = prompt("Bom Dia! Qual é o seu nome?");
+    var alturaDoUsuario = prompt("Qual é a sua altura?");
+    var pesoDoUsuario = prompt("E o seu peso?");
+	mostra(nome);
+	pulaLinha();
+    var imcDoUsuario = calculaIMC(alturaDoUsuario, pesoDoUsuario);
+    mostra("O seu imc é " + imcDoUsuario.toFixed(2));  
+    var imcDoUsuario = calculaIMC(alturaDoUsuario, pesoDoUsuario);
+	
+
+    if(imcDoUsuario <= 17){
+		pulaLinha();
+        mostra("Seu IMC indica que você está MUITO ABAIXO do peso ideal.");
+		pulaLinha();
+		mostra("Classificação: MAGREZA");
+		pulaLinha();
+		mostra ("Grau de Obesidade: 0");
+    }
+	
+	if(imcDoUsuario > 17){
+		if(imcDoUsuario < 18.5){
+			pulaLinha();
+			mostra("Seu IMC indica que você está abaixo do peso ideal.");
+			pulaLinha();
+			mostra("Classificação: MAGRO.");
+			pulaLinha();
+			mostra ("Grau de Obesidade: 0.");
+		}
+    }
+
+    if(imcDoUsuario >= 18.5) {
+		if(imcDoUsuario < 24.9){
+			pulaLinha();
+			mostra("Seu IMC indica que voce está no peso ideal.");
+			pulaLinha();
+			mostra("Classificação: NORMAL.");
+			pulaLinha();
+			mostra("Grau de Obesidade: 0.");
+		}
+    }
+
+    if(imcDoUsuario > 25){
+      if(imcDoUsuario < 29.9){
+	      pulaLinha();
+          mostra("Seu IMC indica que você está acima do peso ideal.");
+		  pulaLinha();
+		  mostra("Classificação: SOBREPESO.");
+		  pulaLinha();
+		  mostra("Grau de Obesidade: 1.");
+      }
+    }
+	
+	if(imcDoUsuario > 30){
+      if(imcDoUsuario < 39.9){
+		  pulaLinha();
+          mostra("Seu IMC indica que você está com obesidade.");
+		  pulaLinha();
+		  mostra("Classificação: OBESIDADE.");
+		  pulaLinha();
+		  mostra("Grau de Obesidade: 2.");
+      }
+    }
+	
+	if(imcDoUsuario > 40){
+		  pulaLinha();
+          mostra("Seu IMC indica que você está com uma obesidade severa."); 
+		  pulaLinha();
+		  mostra("Classificação: OBESIDADE.");
+		  pulaLinha();
+		  mostra("Grau de Obesidade: 3.");
+    }
+
+    </script>

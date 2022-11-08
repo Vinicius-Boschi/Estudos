@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World com Vue</title>
+</head>
+<body>
+
+    <!--Importa diretamente o 'vue'.-->
+    <!--Esse script serve apenas para o aprendizado.-->
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          }
+        }
+    </script>
+
+    <div id="app">{{message}}</div> <!--Vai ser mostrado a mensagem da função na tela.-->
+
+    <script type="module">
+        import { createApp } from 'vue' // Importa a função do vue.
+
+        createApp({ // Cria a função.
+            data() {
+                return {
+                    message: 'Hello World com Vue' // A mensagem que vai ser escrita na tela.
+                }
+            }
+        }).mount('#app') // Serve pra substituir o HTML, adicionando conteúdo da função nele.
+
+    </script>
+    
+</body>
+</html>

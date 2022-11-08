@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');   
+
+:root {
+    --clr-grey-1: #102A42;
+    --clr-grey-2: #617D98;
+    --clr-grey-3: #F1F5F8;
+    --clr-white: #FFFFFF;
+    --clr-secondary: #40CFF4;
+    --clr-black: #222222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px #0000001A;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-3);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: .875rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:not(.logo) {
+    width: 100%;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-2);
+}
+
+.title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.title span {
+    color: var(--clr-secondary);
+}
+
+#about, #services, #tours {
+    height: 80vh;
+}
+
+#services {
+    background-color: var(--clr-white);
+}
+
+.section {
+    padding-bottom: 5rem;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+footer {
+    background-color: var(--clr-grey-1);
+    padding: 5rem 1rem;
+}
+
+footer p {
+    color: var(--clr-white);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}

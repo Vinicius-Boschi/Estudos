@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+// Cores e Fontes principais do site.
+$white: #FFF2E7;
+$dark-white: #fff2e775;
+$light-white: #ECD6C4;
+$font: "Sarala", serif;
+
+body {
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 0.4px solid $dark-white;
+    
+
+    &__logo {
+        width: 2.8rem;    
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: $white;
+        padding: 1rem;
+    }
+}
+
+.main {
+
+    &__principal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        &__titulo {
+            font-family: "Righteous",serif;
+            font-size: 3.1rem;
+            font-weight: 400;
+            color: $white;
+        }
+
+        &__subtitulo {
+            font-family: $font;
+            font-weight: 400;
+            font-size: 1rem;
+            color: $light-white;
+        }
+
+        &__botao {
+            font-family: $font;
+            font-size: 1.25rem;
+            color: #2F2325;
+            background-color: $light-white;
+            box-shadow: 4px 5px 4px 0px #00000040;
+            border-radius: 0.625rem;
+            width: 9rem;
+            height: 3rem;
+            margin-top: 2rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(236, 214, 196, 0.788);
+            }   
+        }
+
+        &__imagem {
+            width: 19rem;
+            height: 18.3rem;
+        }
+    }
+
+    &__secundario {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+
+        &__titulo {
+            border-top: 0.4px solid $dark-white;
+            color: $white;
+            text-align: center;
+            font-family: $font;
+            padding-top: 2rem;
+        }
+
+        &__paragrafo {
+            font-size: 0.75rem;
+            color: $light-white;
+            text-align: center;
+            font-family: $font;
+        }
+    }
+}
+
+.footer {
+    border-top: 0.4px solid $dark-white;
+    padding: 2rem;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        height: 3rem;
+    }
+}

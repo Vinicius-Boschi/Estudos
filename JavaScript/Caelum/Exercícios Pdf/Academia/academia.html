@@ -1,0 +1,101 @@
+<meta charset="utf-8">
+<h1>Cadastramento Academia Caelum</h1>
+Nome
+<br>
+<input type="text" id="campoNome">
+<br><br>
+
+Peso
+<br>
+<input type="text" id="campoPeso">
+<br><br>
+
+Altura
+<br>
+<input type="text" id="campoAltura">
+<br><br>
+
+Data de Nascimento
+<br>
+<input type="text" id="campoDataNascimento">
+<br><br>
+
+<input type="checkbox" id="campoProblemasCardiacos">Tem problemas cardíacos
+<br><br>
+
+<button onclick="calculaIdade()">Enviar</button>
+
+<script src="../Academia/01/js/libIdade.js"></script>
+<script src="../Academia/01/js/libBrasil.js"></script>
+<script src="../Academia/01/js/mostra.js"></script>
+
+<script>
+		function calcularIdade() { 
+				var	dataNascimento = campoDataNascimento.value
+				var	diaMesAno = dataNascimento.split("/")
+				var	diaNascimento = diaMesAno[0]
+				var	mesNascimento =	diaMesAno[1]
+				var	anoNascimento =	diaMesAno[2]
+                var	idade = calculaIdade(diaNascimento, mesNascimento, anoNascimento)
+				
+                
+				//	início	da	lógica	condicional
+				var	temProblemasCardiacos =	campoProblemasCardiacos.checked
+				var	fraseAcompanhamentoMedico
+
+				if(	temProblemasCardiacos)	{
+						fraseAcompanhamentoMedico =	"Necessita de acompanhamento médico"
+				}
+				if(	!temProblemasCardiacos)	{
+						fraseAcompanhamentoMedico =	"NÃO necessita de acompanhamento médico"
+				}
+
+				mostra(`
+				<hr>
+	            Nome: ${nome}
+	            <br>
+	            Peso: ${formataFloatBrasil(peso)} kg
+	            <br>
+	            Altura:	${formataFloatBrasil(altura)} m
+	            <br>
+	            Data de	Nascimento:	${dataNascimento}
+	            <br>
+	            Idade: ${idade}	anos
+	            <br>
+	            ${fraseAcompanhamentoMedico}
+				`)
+		}
+
+    	function criaFicha(){
+var	nome	=	campoNome.value
+var	peso	=	parseFloatBrasil(campoPeso.value)
+var	altura	=	parseFloatBrasil(campoAltura.value)
+var	dataNascimento	=	campoDataNascimento.value
+var	diaMesAnoNascimento	=	dataNascimento.split("/")
+var	diaNascimento	=	diaMesAnoNascimento[0]
+var	mesNascimento	=	diaMesAnoNascimento[1]
+var	anoNascimento	=	diaMesAnoNascimento[2]
+var	idade	=	calculaIdade(diaNascimento,	mesNascimento,	anoNascimento)
+numeroFicha	=	numeroFicha	+	1
+if	(numeroFicha	==	1)	{
+	mostra("<h2>Fichas</h2>")
+}	
+mostra(`
+	<hr>
+	Ficha	${numeroFicha}
+	<hr>
+	Nome:	${nome}
+	<br>
+	Peso:	${formataFloatBrasil(peso)}	kg
+	<br>
+	Altura:	${formataFloatBrasil(altura)}	m
+	<br>
+	Data	de	Nascimento:	${dataNascimento}
+	<br>
+	Idade:	${idade}	anos
+	<br>
+	${fraseAcompanhamentoMedico}
+`)
+
+        }
+</script>

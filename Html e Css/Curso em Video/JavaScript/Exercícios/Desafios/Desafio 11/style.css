@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+h1 {
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+.botao {
+    font: normal 14pt Arial,serif;
+    margin: 10px 1px;
+}
+
+#resultado_certo, #resultado_errado{
+    font-size: 16pt;
+}
+
+#texto {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.certo {
+    background-color: rgba(0, 128, 0, 0.418);
+    width: 120px;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 4px;
+}
+
+.errado {
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.418);
+    padding: 4px;
+}

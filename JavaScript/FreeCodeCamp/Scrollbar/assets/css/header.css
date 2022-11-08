@@ -1,0 +1,29 @@
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(../img/hero.jpeg) center/cover no-repeat;
+}
+
+.banner {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container h1 {
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+
+.container p {
+    color: var(--clr-white);
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .container p {
+        max-width: 40rem;
+    }
+}

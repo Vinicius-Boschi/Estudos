@@ -1,0 +1,20 @@
+<input type = "text"  id="numero"/>
+<input type = "submit" id="adivinhar" value="Acerte o numero que estou pensando!"/>
+
+<script>
+    var segredos = [16, 34, 37, 42, 50, 58];
+    var caixaDoNumero = document.getElementById("numero");
+
+    function botaoClicado() {
+        for(var i = 0; i < segredos.length; i = i + 1) {
+            if(segredos[i] == caixaDoNumero.value){
+                alert("Parabens! Voce acertou um dos " +  "numeros secretos");
+                return;
+            } 
+        }
+        alert("Infelizmente voce errou!");
+    }
+
+    var botaoAdivinhar = document.getElementById("adivinhar");
+    botaoAdivinhar.onclick = botaoClicado;
+    </script>

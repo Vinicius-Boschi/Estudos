@@ -1,0 +1,18 @@
+
+h1 {
+    font-weight: bold;
+}
+
+.botao {
+    font: normal 14pt Arial,serif;
+    margin: 10px 1px;
+}
+
+#resultado {
+    font-size: 16pt;
+}
+
+#texto {
+    font-size: 20pt;
+    font-weight: bold;
+}

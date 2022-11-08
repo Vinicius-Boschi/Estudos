@@ -1,0 +1,9 @@
+let baby_boomers = "<li>Controle financeiro: seus gastos não excedem os ganhos.</li> <li>Comprariam mais se a comunicação das marcas dialogasse mais com eles.</li> <li>No e-commerce, é a geração que mais busca por itens de moda.</li> <li>Lideram as compras de produtos e serviços de viagens.</li> <li>Passam 28 horas semanais em frente ao computador.</li> <li>77% dos Baby Boomers comprariam mais se as marcas compreendessem melhor suas necessidades e exigências.</li> <li>São mais leais e patriotas.</li>"
+
+let geracao_x = "<li>Responsável pela maioria das decisões de consumo da família.</li> <li>Gasta 66% mais com vestuário do que os Millennials.</li> <li>Maior potencial para consumir produtos de luxo.</li> <li>77% preferem foco no produto em vez de causas ou ideias.</li> <li>85% preferem que as campanhas mostrem o produto da forma mais real possível.</li>"
+
+let millennials = "<li>Deixam a casa dos pais cada vez mais tarde.</li> <li>Valorizam o consumo com propósito.</li> <li>Abandonaram a ideia de posse e abraçaram o consumo compartilhado.</li> <li>Críticos e exigentes nas compras.</li> <li>80% desejam que as marcas os entretenham.</li> <li>70% sentem a necessidade de compartilhar sua visão com empresas após uma boa ou má experiência.</li>"
+
+let geracao_z = "<li>Personalização, evitando rótulos.</li> <li>Relação mais crítica e consciente com as empresas.</li> <li>Consumo como expressão de identidade.</li> <li>34% costumam realizar a prática de Webrooming (pesquisar on-line e comprar na loja física).</li> <li>Consumo médio de 23 horas de conteúdo em vídeo por semana.</li>"
+
+let geracao_alpha = "<li>Tem o YouTube como propagador de conhecimento, entretenimento e informação.</li> <li>Reconexão com videogames.</li> <li>Mais transparência na relação com seus pais.</li> <li>Tecnologia como aliada do aprendizado.</li>"

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(#ff008c85, #fcab14ec)
+}
+
+main {
+    background: url(images/background.svg);
+    width: 375px;
+    height: 714px;
+}
+
+.container {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+.avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+    transform: rotate(10deg);
+    animation: avatar 8s linear infinite;
+}
+
+@keyframes avatar{
+    to {transform: rotate(360deg);}
+}
+
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0.25rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin-top: 3rem;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+li img {
+    border-radius: 20px;
+    width: 50px;
+}
+
+.linkedin:hover, .instagram:hover, .codepen:hover  {
+    transition: 1s;
+    width: 100px;
+}

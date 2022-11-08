@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+h1 {
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.botao {
+    font: normal 16pt Arial,serif;
+    margin: 10px 1px;
+}
+
+.inicio {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+#distanciaId {
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+#resultadoId {
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 2.0em;
+}
